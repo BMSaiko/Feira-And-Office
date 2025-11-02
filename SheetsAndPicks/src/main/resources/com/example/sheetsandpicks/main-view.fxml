@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="mainpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1280.0" prefHeight="571.0" prefWidth="811.0" styleClass="mainpane" stylesheets="@../../../css/mainstyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sheetsandpicks.Controllers.MainController">
+    <children>
+        <HBox id="navbar" alignment="CENTER_LEFT" layoutY="6.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="142.0" prefWidth="804.0" stylesheets="@../../../css/mainstyle.css">
+            <children>
+                <ImageView cache="true" fitHeight="137.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                    <image>
+                        <Image url="@../../../img/LOGO-negrito.png" />
+                    </image>
+                    <viewport>
+                        <Rectangle2D />
+                    </viewport>
+                </ImageView>
+            <ComboBox id="combostock" fx:id="comboStock" prefWidth="150.0" promptText="Stock" style="-fx-background-color: #0B0B18;" styleClass="combostock" stylesheets="@../../../css/mainstyle.css">
+
+                      <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+
+                  </ComboBox>
+            <ComboBox id="combouser" fx:id="comboUti" layoutX="10.0" layoutY="10.0" promptText="Utilizadores" style="-fx-background-color: #0B0B18;" styleClass="combo-box" stylesheets="@../../../css/mainstyle.css">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ComboBox>
+            </children>
+        </HBox>
+        <AnchorPane fx:id="pane" layoutY="191.0" prefHeight="552.0" prefWidth="1280.0">
+         <children>
+            <TableView layoutX="37.0" layoutY="33.0" prefHeight="494.0" prefWidth="766.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="235.0" fitWidth="246.0" layoutX="868.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/1540-1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="868.0" layoutY="294.0" prefHeight="26.0" prefWidth="78.0" style="-fx-text-fill: white;" text="Nome" />
+            <Label layoutX="868.0" layoutY="347.0" style="-fx-text-fill: white;" text="Autor" />
+            <Label layoutX="932.0" layoutY="299.0" style="-fx-text-fill: white;" text="O diario de um banana" />
+            <Label layoutX="932.0" layoutY="347.0" style="-fx-text-fill: white;" text="Jeff Kinney" />
+         </children>
+        </AnchorPane>
+      <HBox alignment="CENTER_RIGHT" layoutX="1179.0" layoutY="6.0" prefHeight="142.0" prefWidth="298.0">
+         <children>
+            <AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="142.0" prefWidth="158.0">
+               <children>
+                  <Button id="button" fx:id="btn_sair" layoutX="48.0" layoutY="52.0" mnemonicParsing="false" onAction="#HandlerSair" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;" stylesheets="@../../../css/mainstyle.css" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

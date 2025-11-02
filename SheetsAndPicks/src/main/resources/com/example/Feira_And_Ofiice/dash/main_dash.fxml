@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="mainpane" stylesheets="@../../../../css/mainstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Feira_and_Office.Controller.MainController">
+   <children>
+      <ImageView fitHeight="146.0" fitWidth="268.0" layoutX="-47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/LOGO-negrito.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="166.0" layoutY="43.0" text="Bem vindo">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelNomeCliente" layoutX="266.0" layoutY="43.0" text="Nome Cliente!">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button id="button" fx:id="btn_sair" layoutX="989.0" layoutY="39.0" mnemonicParsing="false" onAction="#HandlerSair" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent;" stylesheets="@../../../../css/mainstyle.css">
+         <graphic>
+            <ImageView id="image1" fx:id="butLogout" fitHeight="30.0" fitWidth="30.0">
+               <image>
+                  <Image url="@../../../../img/sair.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="but_Produtos" layoutX="38.0" layoutY="183.0" mnemonicParsing="false" onAction="#HandlerProdutos" prefHeight="30.0" prefWidth="86.0" styleClass="sbttn1" stylesheets="@../../../../css/mainstyle.css" text="Produtos">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_Encomendas" layoutX="38.0" layoutY="242.0" mnemonicParsing="false" onAction="#HandlerEncomendas" prefHeight="30.0" prefWidth="86.0" styleClass="sbttn3" stylesheets="@../../../../css/mainstyle.css" text="Encomendas">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Pane fx:id="dashPane" layoutX="166.0" layoutY="157.0" prefHeight="565.0" prefWidth="914.0" style="-fx-background-color: black;" />
+   </children>
+</Pane>

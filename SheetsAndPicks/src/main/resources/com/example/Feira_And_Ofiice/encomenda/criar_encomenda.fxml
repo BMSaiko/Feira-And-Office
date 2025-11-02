@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="551.0" styleClass="mainpane" stylesheets="@../../../../css/mainstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Feira_and_Office.Controller.Encomendas.CriarEncomendaController">
+   <children>
+      <Button fx:id="butConfirmar" layoutX="467.0" layoutY="366.0" mnemonicParsing="false" onAction="#HandlerConfirmar" styleClass="sbttn2" text="Confirmar" />
+      <Button fx:id="butCancelar" layoutX="370.0" layoutY="366.0" mnemonicParsing="false" onAction="#HandlerCancelar" styleClass="sbttn3" text="Cancelar" />
+      <Label layoutX="158.0" layoutY="14.0" text="Preencha os dados para a sua entrega">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox layoutX="38.0" layoutY="74.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label text="Endereço 1:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Endereço 2:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Codigo Postal:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <TextField fx:id="txt_endereco" promptText="Endereço" styleClass="text-input-white" stylesheets="@../../../../css/mainstyle.css" />
+                  <TextField fx:id="txt_endereco2" promptText="Endereço2" styleClass="text-input-white" stylesheets="@../../../../css/mainstyle.css" />
+                  <TextField fx:id="txt_postalcode" promptText="Código Postal" styleClass="text-input-white" stylesheets="@../../../../css/mainstyle.css" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TextField fx:id="txt_cidade" layoutX="353.0" layoutY="74.0" promptText="Cidade" styleClass="text-input-white" stylesheets="@../../../../css/mainstyle.css" />
+      <Label layoutX="306.0" layoutY="77.0" text="Cidade:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="112.0" text="Pais:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmb_Pais" layoutX="352.0" layoutY="112.0" prefHeight="30.0" prefWidth="149.0" />
+      <HBox layoutX="48.0" layoutY="245.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label text="Endereço 1:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Endereço 2:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Codigo Postal:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <TextField fx:id="txt_endereco_paga" promptText="Endereço" styleClass="text-input-white" stylesheets="@../../../../css/mainstyle.css" />
+                  <TextField fx:id="txt_endereco2_paga" promptText="Endereço2" styleClass="text-input-white" stylesheets="@../../../../css/mainstyle.css" />
+                  <TextField fx:id="txt_postalcode_paga" promptText="Código Postal" styleClass="text-input-white" stylesheets="@../../../../css/mainstyle.css" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TextField fx:id="txt_cidade_paga" layoutX="358.0" layoutY="249.0" promptText="Cidade" styleClass="text-input-white" stylesheets="@../../../../css/mainstyle.css" />
+      <Label layoutX="311.0" layoutY="252.0" text="Cidade:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="287.0" text="Pais:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmb_Pais_paga" layoutX="357.0" layoutY="287.0" prefHeight="30.0" prefWidth="149.0" />
+      <CheckBox fx:id="ch_check" layoutX="48.0" layoutY="183.0" mnemonicParsing="false" onAction="#handlerCheck" text="Deseja que os dados de pagamento sejam os mesmos que o de entrega?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+   </children>
+</Pane>

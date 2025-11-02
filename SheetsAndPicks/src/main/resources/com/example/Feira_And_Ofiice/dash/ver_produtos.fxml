@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="565.0" prefWidth="914.0" styleClass="mainpane" stylesheets="@../../../../css/mainstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Feira_and_Office.Controller.Produtos.ProdutoController">
+   <children>
+      <TableView fx:id="tableProdutos" prefHeight="565.0" prefWidth="770.0">
+        <columns>
+          <TableColumn fx:id="c_ID" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="c_Description" prefWidth="309.14282989501953" text="Description" />
+            <TableColumn fx:id="c_PVP" prefWidth="78.28573608398438" text="PVP" />
+            <TableColumn fx:id="c_Stock" prefWidth="75.99993896484375" text="Stock" />
+            <TableColumn fx:id="c_Unit" prefWidth="70.28570556640625" text="Unit" />
+            <TableColumn fx:id="c_Active" prefWidth="81.71435546875" text="Active" />
+        </columns>
+      </TableView>
+      <Button fx:id="butCarrinho" layoutX="831.0" layoutY="14.0" mnemonicParsing="false" onAction="#HandlerCarrinho" prefHeight="25.0" prefWidth="25.0" />
+   </children>
+</AnchorPane>

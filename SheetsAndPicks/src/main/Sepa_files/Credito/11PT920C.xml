@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>Pagamento de Stock</MsgId>
+      <CreDtTm>2024-01-23T21:46:35.57288980</CreDtTm>
+      <NbOfTxs>2</NbOfTxs>
+      <CtrlSum>122.2</CtrlSum>
+      <InitgPty>
+        <Nm>Feira&amp;Stock</Nm>
+        <PstlAdr>
+          <StrtNm>Rua da Alegria,128</StrtNm>
+          <PstCd>4445-037</PstCd>
+          <TwnNm>Ermesinde</TwnNm>
+          <Ctry>PT</Ctry>
+        </PstlAdr>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>F&amp;S/78</PmtInfId>
+      <PmtMtd>CHK</PmtMtd>
+      <BtchBookg>false</BtchBookg>
+      <ReqdExctnDt>2024-01-23T21:46:35.572889800</ReqdExctnDt>
+      <Dbtr>
+        <Nm>Feira&amp;Stock</Nm>
+        <PstlAdr>
+          <StrtNm>Rua da Alegria,128</StrtNm>
+          <PstCd>4445-037</PstCd>
+          <TwnNm>Ermesinde</TwnNm>
+          <Ctry>PT</Ctry>
+        </PstlAdr>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>PT50002700000001234567833</IBAN>
+        </Id>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BIC>CGDIPTPL</BIC>
+        </FinInstnId>
+      </DbtrAgt>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>F&amp;S52/12</InstrId>
+          <EndToEndId>F&amp;S12/52</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">122.20</InstdAmt>
+        </Amt>
+        <CdtrAgt>
+          <FinInstnId>
+            <BIC>BBPIPTPL</BIC>
+          </FinInstnId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>Papel do Porto</Nm>
+          <PstlAdr>
+            <StrtNm>Rua da Alegria,nº1</StrtNm>
+            <PstCd>4000-032</PstCd>
+            <TwnNm>Porto</TwnNm>
+            <Ctry>PT</Ctry>
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>PT500010723333126321235325</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Strd>
+            <RfrdDocInf>
+              <Nb>F&amp;S/78</Nb>
+              <RltdDt>2024-02-23T21:46:35.572889800</RltdDt>
+            </RfrdDocInf>
+          </Strd>
+        </RmtInf>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>Pagamento de Stock</MsgId>
+      <CreDtTm>2024-01-23T21:46:35.57288980</CreDtTm>
+      <NbOfTxs>2</NbOfTxs>
+      <CtrlSum>122.2</CtrlSum>
+      <InitgPty>
+        <Nm>Feira&amp;Stock</Nm>
+        <PstlAdr>
+          <StrtNm>Rua da Alegria,128</StrtNm>
+          <PstCd>4445-037</PstCd>
+          <TwnNm>Ermesinde</TwnNm>
+          <Ctry>PT</Ctry>
+        </PstlAdr>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>F&amp;S/78</PmtInfId>
+      <PmtMtd>CHK</PmtMtd>
+      <BtchBookg>false</BtchBookg>
+      <ReqdExctnDt>2024-01-23T21:46:35.572889800</ReqdExctnDt>
+      <Dbtr>
+        <Nm>Feira&amp;Stock</Nm>
+        <PstlAdr>
+          <StrtNm>Rua da Alegria,128</StrtNm>
+          <PstCd>4445-037</PstCd>
+          <TwnNm>Ermesinde</TwnNm>
+          <Ctry>PT</Ctry>
+        </PstlAdr>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>PT50002700000001234567833</IBAN>
+        </Id>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BIC>CGDIPTPL</BIC>
+        </FinInstnId>
+      </DbtrAgt>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>F&amp;S52/12</InstrId>
+          <EndToEndId>F&amp;S12/52</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">122.20</InstdAmt>
+        </Amt>
+        <CdtrAgt>
+          <FinInstnId>
+            <BIC>BBPIPTPL</BIC>
+          </FinInstnId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>Papel do Porto</Nm>
+          <PstlAdr>
+            <StrtNm>Rua da Alegria,nº1</StrtNm>
+            <PstCd>4000-032</PstCd>
+            <TwnNm>Porto</TwnNm>
+            <Ctry>PT</Ctry>
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>PT500010723333126321235325</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Strd>
+            <RfrdDocInf>
+              <Nb>F&amp;S/78</Nb>
+              <RltdDt>2024-02-23T21:46:35.572889800</RltdDt>
+            </RfrdDocInf>
+          </Strd>
+        </RmtInf>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+</Document>

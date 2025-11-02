@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="565.0" prefWidth="914.0" styleClass="mainpane" stylesheets="@../../../../css/mainstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Feira_and_Office.Controller.Encomendas.ListarEncomenda">
+   <children>
+      <TableView fx:id="tableEncomendas" prefHeight="565.0" prefWidth="830.0">
+        <columns>
+          <TableColumn fx:id="c_Id" prefWidth="224.79999083280563" text="Id" />
+          <TableColumn fx:id="c_Date" prefWidth="284.7999725341797" text="Date" />
+            <TableColumn fx:id="c_total" prefWidth="96.79995727539062" text="totalAmount" />
+            <TableColumn fx:id="c_currency" prefWidth="125.5999755859375" text="currency" />
+            <TableColumn fx:id="c_status" prefWidth="101.60009765625" text="status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
