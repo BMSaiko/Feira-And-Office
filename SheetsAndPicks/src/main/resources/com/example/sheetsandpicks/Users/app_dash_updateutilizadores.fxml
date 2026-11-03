@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="425.0" prefWidth="600.0" styleClass="mainpane" stylesheets="@../../../../css/mainstyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sheetsandpicks.Controllers.app_dashboard.app_dash_updateutilizadoresController">
+   <children>
+      <TextField fx:id="txt_nome" layoutX="143.0" layoutY="76.0" promptText="nome" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-amarelo" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+      <Label fx:id="lb_titulo" layoutX="18.0" layoutY="7.0" text="Fornecedores">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="81.0" text="Nome">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="42.0" layoutY="110.0" text="Endereço">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="2.0" />
+         </padding>
+      </Label>
+      <Label layoutX="36.0" layoutY="140.0" text="Endereço2">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="2.0" />
+         </padding>
+      </Label>
+      <Label layoutX="49.0" layoutY="171.0" text="Cidade">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="2.0" />
+         </padding>
+      </Label>
+      <Label layoutX="58.0" layoutY="201.0" text="País">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="2.0" />
+         </padding>
+      </Label>
+      <Label layoutX="44.0" layoutY="232.0" text="Telefone">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="2.0" />
+         </padding>
+      </Label>
+      <Label layoutX="54.0" layoutY="262.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="2.0" />
+         </padding>
+      </Label>
+      <Label layoutX="26.0" layoutY="292.0" text="Codigo-postal">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="2.0" />
+         </padding>
+      </Label>
+      <Label layoutX="18.0" layoutY="323.0" text="Data nascimento">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="2.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="txt_endereco" layoutX="143.0" layoutY="106.0" promptText="endereço" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-amarelo" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+      <TextField fx:id="txt_endereco2" layoutX="143.0" layoutY="136.0" promptText="endereço2" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-amarelo" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+      <TextField fx:id="txt_cidade" layoutX="143.0" layoutY="166.0" promptText="cidade" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-amarelo" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+      <ComboBox fx:id="cmb_pais" layoutX="143.0" layoutY="196.0" prefWidth="150.0" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-amarelo" />
+            <String fx:value="text-input-white" />
+         </styleClass></ComboBox>
+      <TextField fx:id="txt_telefone" layoutX="143.0" layoutY="227.0" promptText="telefone" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-amarelo" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+      <TextField fx:id="txt_email" layoutX="143.0" layoutY="257.0" promptText="email" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-amarelo" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+      <TextField fx:id="txt_cod_postal" layoutX="143.0" layoutY="287.0" promptText="codigo-postal" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-amarelo" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+      <DatePicker fx:id="dpicker_data" layoutX="143.0" layoutY="318.0" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-amarelo" />
+            <String fx:value="text-input-white" />
+         </styleClass></DatePicker>
+      <Label fx:id="lblusername" layoutX="345.0" layoutY="83.0" text="Username">
+         <padding>
+            <Insets left="2.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lblpassword" layoutX="347.0" layoutY="112.0" text="Password">
+         <padding>
+            <Insets left="2.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lbl_cod_fornecedor" layoutX="321.0" layoutY="139.0" text="Codigo Fornecedor">
+         <padding>
+            <Insets left="2.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="txt_username" layoutX="432.0" layoutY="75.0" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-azul" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+      <TextField fx:id="txt_password" layoutX="432.0" layoutY="105.0" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-azul" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+      <TextField fx:id="txt_cod_fornecedor" layoutX="432.0" layoutY="135.0" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-azul" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+         <TextField fx:id="txt_IBAN" layoutX="432.0" layoutY="195.0" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-azul" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+                  <TextField fx:id="txt_BIC" layoutX="432.0" layoutY="165.0" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-azul" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+
+                  <Label fx:id="lblIBAN" layoutX="364.0" layoutY="202.0" text="IBAN">
+                  </Label>
+                  <Label fx:id="lblBIC" layoutX="368.0" layoutY="172.0" text="BIC">
+                  </Label>
+      <Pane layoutY="343.0" prefHeight="92.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btn_adicionar" layoutX="506.0" layoutY="44.0" mnemonicParsing="false" onAction="#HandlerAlterar" prefWidth="70.0" styleClass="sbttn3" stylesheets="@../../../../css/mainstyle.css" text="Alterar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btn_Cancelar" layoutX="415.0" layoutY="44.0" mnemonicParsing="false" onAction="#HandlerCancelar" prefWidth="70.0" styleClass="sbttn2" stylesheets="@../../../../css/mainstyle.css" text="Cancelar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

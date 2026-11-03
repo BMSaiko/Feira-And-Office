@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="pane" alignment="CENTER" maxHeight="718.0" maxWidth="718.0" minHeight="500.0" minWidth="500.0" prefHeight="560.0" prefWidth="601.0" styleClass="mainpane" stylesheets="@../../../../css/mainstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Feira_and_Office.Controller.app_login.RegisterController">
+   <children>
+        <VBox alignment="CENTER" prefHeight="566.0" prefWidth="566.0" spacing="10.0">
+            <children>
+            <ImageView fitHeight="337.0" fitWidth="389.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="-160.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../../../../img/Logo-slogan.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="TOP_CENTER" prefHeight="202.0" prefWidth="395.0">
+               <children>
+                  <HBox prefHeight="152.0" prefWidth="379.0">
+                     <children>
+                        <VBox prefHeight="152.0" prefWidth="116.0">
+                           <children>
+                              <Label alignment="CENTER" text="Nome">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" text="endereço">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="13.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" text="endereço2">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="13.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" text="cidade">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="13.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" text="NIF">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="13.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <TextField fx:id="txt_nome" promptText="nome" stylesheets="@../../../../css/mainstyle.css">
+                                 <styleClass>
+                                    <String fx:value="txt-amarelo" />
+                                    <String fx:value="text-input-white" />
+                                 </styleClass>
+                              </TextField>
+                              <TextField fx:id="txt_endereco" promptText="endereço" stylesheets="@../../../../css/mainstyle.css">
+                                 <styleClass>
+                                    <String fx:value="txt-amarelo" />
+                                    <String fx:value="text-input-white" />
+                                 </styleClass>
+                              </TextField>
+                              <TextField fx:id="txt_endereco2" promptText="endereço2" stylesheets="@../../../../css/mainstyle.css">
+                                 <styleClass>
+                                    <String fx:value="txt-amarelo" />
+                                    <String fx:value="text-input-white" />
+                                 </styleClass>
+                              </TextField>
+                              <TextField fx:id="txt_cidade" promptText="cidade" stylesheets="@../../../../css/mainstyle.css">
+                                 <styleClass>
+                                    <String fx:value="txt-amarelo" />
+                                    <String fx:value="text-input-white" />
+                                 </styleClass>
+                              </TextField>
+                              <TextField fx:id="txt_NIF" promptText="NIF" stylesheets="@../../../../css/mainstyle.css">
+                                 <styleClass>
+                                    <String fx:value="txt-amarelo" />
+                                    <String fx:value="text-input-white" />
+                                 </styleClass>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="152.0" prefWidth="116.0">
+                           <children>
+                              <Label alignment="CENTER" text="Pais">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" text="Telefone">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="13.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" text="Email">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="13.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" text="Codigo-postal">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="13.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" text="Password">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets top="13.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <ComboBox fx:id="cmb_pais" prefHeight="30.0" prefWidth="153.0" stylesheets="@../../../../css/mainstyle.css">
+                                 <styleClass>
+                                    <String fx:value="txt-amarelo" />
+                                    <String fx:value="text-input-white" />
+                                 </styleClass>
+                              </ComboBox>
+                              <TextField fx:id="txt_telefone" promptText="telefone" stylesheets="@../../../../css/mainstyle.css">
+                                 <styleClass>
+                                    <String fx:value="txt-amarelo" />
+                                    <String fx:value="text-input-white" />
+                                 </styleClass>
+                              </TextField>
+                              <TextField fx:id="txt_email" promptText="email" stylesheets="@../../../../css/mainstyle.css">
+                                 <styleClass>
+                                    <String fx:value="txt-amarelo" />
+                                    <String fx:value="text-input-white" />
+                                 </styleClass>
+                              </TextField>
+                              <TextField fx:id="txt_cod_postal" prefHeight="30.0" prefWidth="153.0" promptText="codigo-postal" stylesheets="@../../../../css/mainstyle.css">
+                                 <styleClass>
+                                    <String fx:value="txt-amarelo" />
+                                    <String fx:value="text-input-white" />
+                                 </styleClass>
+                              </TextField>
+                              <PasswordField fx:id="passField" maxWidth="225.0" promptText="Password" stylesheets="@../../../../css/mainstyle.css">
+                                 <styleClass>
+                                    <String fx:value="txt-azul" />
+                                    <String fx:value="text-input-white" />
+                                 </styleClass>
+                              </PasswordField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                      <Button fx:id="butregister" onAction="#fazerRegister" prefHeight="29.0" prefWidth="225.0" styleClass="sbttn2" stylesheets="@../../../../css/mainstyle.css" text="Register" textFill="#0b0b17">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="24.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <Hyperlink fx:id="href_Login" onAction="#SendToLogin" text="Já tenho Conta!" />
+            </children>
+        </VBox>
+   </children>
+</HBox>

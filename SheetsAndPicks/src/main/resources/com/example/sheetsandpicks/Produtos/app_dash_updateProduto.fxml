@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="320.0" prefWidth="595.0" styleClass="mainpane" stylesheets="@../../../../css/mainstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sheetsandpicks.Controllers.Produtos.UpdateProdutoController">
+   <children>
+      <TextField fx:id="txt_pvp" layoutX="111.0" layoutY="80.0" promptText="PVP" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-amarelo" />
+            <String fx:value="text-input-white" />
+         </styleClass></TextField>
+      <Label fx:id="lb_titulo" layoutX="18.0" layoutY="7.0" text="Alterar Produto">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="81.0" text="PVP:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Pane layoutX="6.0" layoutY="215.0" prefHeight="99.0" prefWidth="571.0">
+         <children>
+            <Button fx:id="btn_adicionar" layoutX="506.0" layoutY="44.0" mnemonicParsing="false" onAction="#HandlerAlterar" prefWidth="70.0" styleClass="sbttn3" stylesheets="@../../../../css/mainstyle.css" text="Alterar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btn_Cancelar" layoutX="415.0" layoutY="44.0" mnemonicParsing="false" onAction="#HandlerCancelar" prefWidth="70.0" styleClass="sbttn2" stylesheets="@../../../../css/mainstyle.css" text="Cancelar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Label layoutX="315.0" layoutY="139.0" prefHeight="44.0" prefWidth="55.0" text="Ativar:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="ch_ativar" layoutX="372.0" layoutY="153.0" mnemonicParsing="false" />
+      <Label layoutX="43.0" layoutY="147.0" text="Stock:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <TextField fx:id="txt_Stock" layoutX="111.0" layoutY="146.0" promptText="Stock" stylesheets="@../../../../css/mainstyle.css">
+         <styleClass>
+            <String fx:value="txt-amarelo" />
+            <String fx:value="text-input-white" />
+         </styleClass>
+      </TextField>
+      <Label layoutX="324.0" layoutY="81.0" text="Unit:">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <ComboBox fx:id="cmb_Unit" layoutX="372.0" layoutY="82.0" prefWidth="150.0" />
+   </children>
+</Pane>

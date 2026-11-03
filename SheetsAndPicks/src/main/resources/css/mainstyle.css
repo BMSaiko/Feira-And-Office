@@ -1,0 +1,113 @@
+/* SCSS HEX (Lighter Theme)
+$rich-black: #333333ff; // You can adjust this to a lighter black if needed
+$white-smoke: #f8f8f8ff; // Lighter than #f3f4f4ff
+$carrot-orange: #ffa500ff; // Changed to a lighter orange
+$steel-blue: #87ceebff; // Changed to a lighter blue
+$dogwood-rose: #ff69b4ff; // Changed to a lighter rose color
+*/
+
+.mainpane {
+  -fx-background-color: #ffffff; /* Use $rich-black or a lighter black here*/
+}
+
+/* Separators */
+
+.separator *.line {
+  -fx-border-width: 1px;
+}
+
+.hseparator.separator .line {
+  -fx-border-color: #ffa500ff; /* // Use $carrot-orange */
+}
+
+.vseparator.separator .line {
+  -fx-border-color: #0073c9; /* // Use $steel-blue */
+}
+
+/* Buttons */
+
+.button {
+  -fx-text-fill: #f8f8f8ff; /* // Use $white-smoke */
+  -fx-border-width: 2;
+  -fx-background-radius: 50;
+}
+
+.button1{
+    -fx-text-fill: #006464;
+    -fx-background-color: #DFB951;   
+    -fx-padding: 5;
+}
+.sbttn1.button {
+  -fx-background-color: #ffa500; /* carrot orange */
+}
+
+.sbttn2.button {
+  -fx-background-color: #df066b; /* dogwood rose */
+}
+
+.sbttn3.button {
+  -fx-background-color: #0073c9; /* steel blue */
+}
+
+.sbttn4.button1 {
+  -fx-background-color: #FFF8DC; /* steel blue */
+}
+
+.combo-box {
+  -fx-background-color: #fff; /* // Use $rich-black or a lighter black here */
+  -fx-border-color: #df066b;
+  -fx-border-width: 2;
+  -fx-border-radius: 5;
+}
+
+.list-cell {
+  -fx-text-fill: #000000;
+  -fx-background-color: #fff; /* // Use $rich-black or a lighter black here */
+}
+
+.text-input {
+  -fx-text-fill: #ffffff;
+}
+
+.text-input-white {
+  -fx-text-fill: #000000;
+}
+
+.spinner .text-field {
+  -fx-text-fill: black; /* Change the color to your desired color */
+}
+
+.date-picker .text-field {
+  -fx-text-fill: black;
+}
+/* Labels */
+
+.label_mov {
+  -fx-text-fill: white;
+}
+
+.texto {
+  -fx-text-fill: white;
+}
+
+.txt-magenta {
+  -fx-background-color: transparent;
+  -fx-border-radius: 5;
+  -fx-border-width: 2;
+  -fx-border-color: #df066b;
+}
+
+.txt-amarelo {
+  -fx-background-color: transparent;
+  -fx-border-radius: 5;
+  -fx-border-width: 2;
+  -fx-border-color: #ffa500ff;
+}
+
+.txt-azul {
+  -fx-background-color: transparent;
+  -fx-border-radius: 5;
+  -fx-border-width: 2;
+  -fx-border-color: #0073c9;
+}
+

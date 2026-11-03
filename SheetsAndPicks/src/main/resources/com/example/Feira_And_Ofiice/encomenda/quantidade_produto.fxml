@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="246.0" prefWidth="395.0" styleClass="mainpane" stylesheets="@../../../../css/mainstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Feira_and_Office.Controller.Produtos.quantidade_produtoController">
+   <top>
+      <Label fx:id="labelNomeProduto" prefWidth="117.0" text="Nome Produto" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <Label text="Quantidade" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <Spinner fx:id="spinner" editable="true" prefHeight="25.0" prefWidth="144.0" stylesheets="@../../../../css/mainstyle.css" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Pane prefHeight="206.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="butCancelar" layoutX="25.0" layoutY="179.0" mnemonicParsing="false" onAction="#HandlerCancelar" styleClass="sbttn3" text="Cancelar" />
+            <Button fx:id="butConfirmar" layoutX="108.0" layoutY="179.0" mnemonicParsing="false" onAction="#HandlerConfirmar" styleClass="sbttn2" text="Confirmar" />
+         </children>
+      </Pane>
+   </right>
+</BorderPane>

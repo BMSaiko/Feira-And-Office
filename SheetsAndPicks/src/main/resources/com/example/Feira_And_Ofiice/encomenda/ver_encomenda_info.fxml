@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableEncomendaInfo" prefHeight="565.0" prefWidth="500.0">
+        <columns>
+          <TableColumn prefWidth="100.0" text="lineNumber" />
+          <TableColumn prefWidth="100.0" text="productCode" />
+            <TableColumn prefWidth="100.0" text="quantity" />
+            <TableColumn prefWidth="100.0" text="unit" />
+            <TableColumn prefWidth="100.0" text="price" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
